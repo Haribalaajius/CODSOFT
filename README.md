@@ -4,3 +4,6 @@ This is the code for creating a Landing page in my Localhost website using HTML,
 and i created a well designed on this UI for a landing at my own style and thus it is ready for deployment.
 
 Thus i project is ready using HTML tags and CSS properties for styling and Appelaing looks.
+
+<img width="960" alt="Sample Output" src="https://github.com/Haribalaajius/CODSOFT/assets/151506742/5d2a290b-5c71-4a06-a599-bbfbd62a64e7">
+
