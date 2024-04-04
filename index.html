@@ -4,128 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Responsive Portfolio</title>
+    <title>Simple Calculator</title>
 </head>
 <body>
-    <nav>
-        <div class="nav__content">
-            <div class="logo"><a href="#">Hari Balaaji</a></div>
-            <label for="check" class="checkbox">
-                <i class="ri-menu-line"></i>
-            </label>
-            <input type="checkbox" name="check" id="check">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Resume</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+    <div class="container">
+        <div class="calculator">
+            <input type="text" placeholder="0" id="output-screen">
+            <button onclick="Clear()">Cl</button>
+            <button onclick="del()">DEL</button>
+            <button onclick="display('%')">%</button>
+            <button onclick="display('/')">/</button>
+            <button onclick="display('7')">7</button>
+            <button onclick="display('8')">8</button>
+            <button onclick="display('9')">9</button>
+            <button onclick="display('*')">*</button>
+            <button onclick="display('4')">4</button>
+            <button onclick="display('5')">5</button>
+            <button onclick="display('6')">6</button>
+            <button onclick="display('-')">-</button>
+            <button onclick="display('1')">1</button>
+            <button onclick="display('2')">2</button>
+            <button onclick="display('3')">3</button>
+            <button onclick="display('+')">+</button>
+            <button onclick="display('.')">.</button>
+            <button onclick="display('0')">0</button>           
+            <button onclick="Calculate()"class="equal">=</button>           
         </div>
-    </nav>
-
-    <section class="section">
-        <div class="section__container">
-            <div class="content">
-                <p class="subtitle">HELLO</p>
-                <h1 class="title">
-                    I'm <span>Hari Balaaji</span><br>
-                    a Web Developer
-                </h1>
-                <p class="description">
-                    Welcome to my Web Developer Portfolio. I'm Hari Balaaji, a skilled and creative
-                    web developer with a passion for creating beautiful, responsive, and user-friendly
-                    websites. I've worked on a variety of web projects, ranging from personal blogs to
-                    e-commerce platforms.
-                </p>
-                <div class="action__btns">
-                    <button class="hire__me">Hire Me</button>
-                    <button class="portfolio">Portfolio</button>
-                </div>
-            </div>
-            <div class="image">
-                <img src="images/My pic.jpg" alt="profile">
-            </div>
-        </div>
-    </section>
-
-    <section class="skills">
-        <div class="section__container">
-            <h2 class="section__title">Skills</h2>
-            <ul class="skills__list">
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>Node.js</li>
-            </ul>
-        </div>
-    </section>
-
-    <section class="projects">
-        <div class="section__container">
-            <h2 class="section__title">Projects</h2>
-            <div class="project">
-                <h3 class="project__title">Project 1</h3>
-                <p class="project__description">Creating Responsive websites and webpages through FullStack.</p>
-                <p class="project__tech">Technologies used: HTML, CSS, JavaScript</p>
-                <a href="#" class="project__link">View Project</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="education">
-        <div class="section__container">
-            <h2 class="section__title">Education</h2>
-            <div class="education__item">
-                <h3 class="education__degree">Bachelor of Science in Artificial Intelligence & Data Science.</h3>
-                <p class="education__institution">Jansons Institute of Technology.</p>
-                <p class="education__year">2022 - 2026</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="experience">
-        <div class="section__container">
-            <h2 class="section__title">Experience</h2>
-            <div class="experience__item">
-                <h3 class="experience__position">Backend Developer</h3>
-                <p class="experience__company">ABC Company</p>
-                <p class="experience__year">2024 - Present</p>
-                <p class="experience__responsibilities">I had a work experience as a team leader and a project manager.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="testimonials">
-        <div class="section__container">
-            <h2 class="section__title">Testimonials</h2>
-            <div class="testimonial">
-                <p class="testimonial__text">"He was good at it."</p>
-                <p class="testimonial__author">Vittal Prasad.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="contact">
-        <div class="section__container">
-            <h2 class="section__title">Contact Me</h2>
-            <form class="contact__form">
-                <input type="text" name="name" placeholder="Hari Balaaji U S">
-                <input type="email" name="email" placeholder="haribalaajius@gmail.com">
-                <textarea name="message" placeholder="Your Message"></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="section__container">
-            <p>&copy; 2024 Hari Balaaji. All rights reserved.</p>
-        </div>
-    </footer>
+    </div>  
+    <script>
+        let outputScreen=document.getElementById("output-screen");
+        function display(num){
+            outputScreen.value +=num;
+        }
+        function Calculate(){
+            try{
+                outputScreen.value=eval(outputScreen.value);
+            }
+            catch(err){
+                alert("Invalid")
+            }
+        }
+        function Clear(){
+            outputScreen.value="";
+        }
+        function del(){
+            outputScreen.value=outputScreen.value.slice(0,-1);
+        }
+    </script> 
 </body>
 </html>
