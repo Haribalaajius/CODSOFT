@@ -14,3 +14,11 @@ The Sample Outputs:
 <img width="960" alt="port1" src="https://github.com/Haribalaajius/CODSOFT/assets/151506742/050ac97f-069e-4982-bb3b-fd1d3c60bf00">
 <img width="960" alt="port2" src="https://github.com/Haribalaajius/CODSOFT/assets/151506742/f58b4a91-b7b0-4442-bfe2-0c3b574e352e">
 <img width="469" alt="port3" src="https://github.com/Haribalaajius/CODSOFT/assets/151506742/888a72fe-4f89-4650-8a36-4b116c2c7ce5">
+
+#CODSOFT Simple Calculatotr #PROJECT3 - Creating a Calcultor using CSS, HTML, and JavaScript,this is  implement an
+interactive interface with buttons for addition, subtraction, multiplication, and division
+operations. The calculator also have a display screen to show user input and results. Utilize
+CSS grid system for button alignments. Use of event listeners, if-else statements, operators, and
+loops to handle user input and perform calculations.
+The Sample Output:
+<img width="960" alt="cal sam" src="https://github.com/Haribalaajius/CODSOFT/assets/151506742/944ac168-307d-4a99-b9bb-774a383c1984">
