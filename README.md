@@ -22,3 +22,9 @@ CSS grid system for button alignments. Use of event listeners, if-else statement
 loops to handle user input and perform calculations.
 The Sample Output:
 <img width="960" alt="cal sam" src="https://github.com/Haribalaajius/CODSOFT/assets/151506742/944ac168-307d-4a99-b9bb-774a383c1984">
+
+This is the Tribute page made for Dr.R.Puneeth Rajkumar With basic knowledge of HTML and CSS,  creating a webpage dedicated to someone you admire. Write about their admirable qualities, add images, and design a visually appealing
+layout. Experiment with font styles, use paragraphs effectively, and play with background
+colors. This project allows you to express your admiration in a simple and personalized way.
+The Sample Output:<img width="960" alt="tribute" src="https://github.com/Haribalaajius/CODSOFT/assets/151506742/0a1dc9eb-6ae2-4d3c-b5b6-9432373f7c2a">
+
